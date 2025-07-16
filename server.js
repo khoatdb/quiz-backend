@@ -26,10 +26,6 @@ const questions = [
 // app.get() tells the server what to do when it receives a GET request.
 // The first argument '/' is the URL path (the homepage).
 // The second argument is a function with two parameters: request (req) and response (res).
-app.get('/', (req, res) => {
-  // res.send() is how we send a response back to the browser.
-  res.send('Hello World! Our server is working!');
-});
 
 app.get('/api/questions', (req, res) => {
   // res.send() is how we send a response back to the browser.
