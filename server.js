@@ -1,10 +1,11 @@
+require('dotenv').config();
 // 1. Import Express
 // We need to 'require' the express package we just installed.
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 
-const MONGO_URI = "mongodb+srv://khoatdb:qPOASu90PjsJzRfi@khoatdb.urqf16f.mongodb.net/quizdb?retryWrites=true&w=majority&appName=khoatdb"; 
+const MONGO_URI = process.env.MONGO_URI;
 // 2. Initialize the App
 // We create an instance of an Express application.
 const app = express();
